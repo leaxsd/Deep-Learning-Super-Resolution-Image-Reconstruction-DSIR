@@ -4,4 +4,4 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve enormously l
 
 This repository proposes a method that use convolution neural network (ConvNet) Auto-encoder to reconstruct a localization image from HD datasets. 
 
-![convnet autoencoder](/Users/leax/Dropbox/gm-icfo/image/conv_autoencoder.png)
+![convnet autoencoder](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/assets/localization.png)
