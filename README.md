@@ -8,7 +8,7 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve spatial reso
 
 
 
-![convnet_autoencoder](image/autoencoder.png)
+![convnet_autoencoder](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/raw/assets//autoencoder.png)
 
 **Fig.1** - ConvNet auto-encoder representation for super-resolution image reconstruction.
 
@@ -22,7 +22,7 @@ ConvNet auto-encoder proposed here were coded in [PyTorch](http://pytorch.org). 
 
 
 
-![](image/visdom.png)
+![](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/raw/assets//visdom.png)
 
 **Fig.2** - (Upper row) Training dataset ground-truth pixel localisation image examples and (Lower row) correspondent trained auto-encoder predictions.
 
@@ -127,7 +127,7 @@ then you can open in your browser http://localhost:8097/# .
 
 For each training epoch you you'll have a set of 4 images with the prediction image reconstruction and the correspondent pixel ground-truth localisation and the loss function value plot.
 
-![visdom_output](image/visdom_window.png)
+![visdom_output](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/raw/assets//visdom_window.png)
 
 **Fig.3** - Ground-Truth pixel localisation, auto-encoder prediction image reconstruction and training loss visdom output.
 
@@ -147,15 +147,15 @@ In order to test our trained model we used the  [Tubes HD dataset](http://bigwww
 
 ### Localisation Image Reconstruction 
 
-![single frame](image/single_frame.png)
+![single frame](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/raw/assets//single_frame.png)
 
 **Fig.4** - Tubes HD dataset. (**Left**) single input frame image (**Right**) Zoom at red square and the ground-truth emitters positions(red crosses).
 
-![single frame localization](image/single_frame_localization.png)
+![single frame localization](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/raw/assets//single_frame_localization.png)
 
 **Fig.5** - (**Left**) Single frame DSIR and (**Right**) comparison with ground-truth emitters positions (red crosses).
 
-![single frame](image/localization.png)
+![single frame](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/raw/assets//localization.png)
 
 **Fig.6** -  (**Left**) Reconstruction of the 361 frame of the Tubes HD dataset. (**Right**) Zoom (green square Fig.4) image and ground-truth emitters position (red dots). The total reconstruction time for all frames is about **3 sec**. 
 
