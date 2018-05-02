@@ -1,10 +1,10 @@
 # Deep-Learning Super-resolution Image Reconstruction (DSIR)
 
-######  | :file_folder: [Files](#Files) | :computer: [Code](#Code)| :memo: [Results](#Results) |:copyright: [References](#References) |						
+######  | :file_folder: [Files](#Files) | :computer: [Code](#Code)| :memo: [Results](#Results) |:speech_balloon: [Discussions](#Discussions) | :copyright: [References](#References) |						
 
 ___
 
-Super-resolution microscopy techniques (PALM, STORM…) can improve spatial resolution far beyond diffraction limit trough recording many frames of sparse single events emission (fluorescence labels). Low density (LD) data acquisition can provide tens of thousand of images of sparse events that can be readily localized using standard fitting algorithms (e.g, Thunder-STORM). However, the acquisition of such large number of images takes some time and can result to the sample drift and degrade the sample due to the intense light exposion. High density (HD) data of several hundred images can be faster in acquisition time but result of a very dense number of events per frames, which compromise the performance of the fitting localisation algorithms. This repository proposes a method that use convolution neural network (ConvNet) auto-encoder [[1](#References)] to reconstruct a localisation images from HD datasets. 
+Super-resolution microscopy techniques (PALM, STORM…) can improve spatial resolution far beyond diffraction limit trough recording many frames of sparse single events emission (fluorescence labels). Low density (LD) data acquisition can provide tens of thousand of images of sparse events that can be readily localized using standard fitting algorithms (e.g, Thunder-STORM). However, the acquisition of such large number of images takes some time and can result to the sample drift and degrade the sample due to the intense light exposion. High density (HD) data of several hundred images can be faster in acquisition time but result of a very dense number of events per frames, which compromise the performance of the fitting localization algorithms. This repository proposes a method that use convolution neural network (ConvNet) auto-encoder [[1](#References)] to reconstruct a localisation images from HD datasets. 
 
 
 
@@ -157,7 +157,15 @@ In order to test our trained model we used the  [Tubes HD dataset](http://bigwww
 
 ![single frame](image/localization.png)
 
-**Fig.6** -  (**Left**) Reconstruction of the 361 frame of the Tubes HD dataset. (**Right**) Zoom (green square Fig.4) image and ground-truth emitters position (red dots). 
+**Fig.6** -  (**Left**) Reconstruction of the 361 frame of the Tubes HD dataset. (**Right**) Zoom (green square Fig.4) image and ground-truth emitters position (red dots). The total reconstruction time for all frames is about **3 sec**. 
+
+
+
+## Discussions
+
+Here we presented a ConvNet auto-encoder model applied to high density recorded stochastic super-resolution microscopy data. Although not discussed in here, this DSIR can improve performance compared with the state-of-the-art fitting algorithms that usually performed poorly with high density data. Also DSIR can be much faster the the most of fitting algorithms. 
+
+The current performance might be improved by feeding the same auto-encoder with different training dataset, E.g., experimental measured sparse data where the label positions are define via a standard fitting algorithm. Despite, DSIR be able to reconstruct localisation super-resolution images, it lacks in terms of quantitative information since the ConvNet auto-encoder doesn't outputs the localisation coordinates of each detected event. 
 
 
 
