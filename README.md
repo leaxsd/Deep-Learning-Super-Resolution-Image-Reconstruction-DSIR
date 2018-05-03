@@ -49,10 +49,10 @@ A dataset of randomly generated single emission events were used to training our
 | PSF: Integrated Gaussian               | Base level: 100                    |
 | FWHM range: 200:300 nm                 |                                    |
 | Intensity range: 80:2050 photons       |                                    |
-| Density: 2.0 emitters/$`\mu m^2`$        |                                    |
+| Density: 2.0 emitters/$0$        |                                    |
 | BG noise: 20                           |                                    |
 
-You can also download the used dataset [here](image/dataset.zip).  (**!!!Remember to adjust this link later!!!**). The raw dataset should be uncompressed  at `~/data/dataset/` folder.  
+You can also download the used dataset [here](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction/raw/assets/dataset.zip). The raw dataset should be uncompressed  at `~/data/dataset/` folder.  
 
 
 
