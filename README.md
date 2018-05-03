@@ -49,7 +49,7 @@ A dataset of randomly generated single emission events were used to training our
 | PSF: Integrated Gaussian               | Base level: 100                    |
 | FWHM range: 200:300 nm                 |                                    |
 | Intensity range: 80:2050 photons       |                                    |
-| Density: 2.0 emitters/$`\mu m^2`$        |                                    |
+| Density: 2.0 emitters/&mu;m<sup>2</sup> |                                    |
 | BG noise: 20                           |                                    |
 
 You can also download the used dataset [here](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/dataset.zip).  The raw dataset should be uncompressed  at `~/data/dataset/` folder.  
@@ -86,11 +86,9 @@ def forward(self, x):
 
 Using an Adam optimizer, the loss function were defined as:
 
-$`
-loss(x, \hat{x}) = \frac{1}{N} \displaystyle \sum_{i=1}^N  |\hat{x_i} \otimes g - x_i \otimes g |^2 + 1e^{-5}*|\hat{x}i|^2
-`$
+![loss_function](http://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20loss%28x%2C%20%5Chat%7Bx%7D%29%20%3D%20%5Cfrac%7B1%7D%7BN%7D%20%5Cdisplaystyle%20%5Csum_%7Bi%3D1%7D%5EN%20%7C%5Chat%7Bx_i%7D%20%5Cotimes%20g%20-%20x_i%20%5Cotimes%20g%20%7C%5E2%20&plus;%201e%5E%7B-5%7D*%7C%5Chat%7Bx%7Di%7C%5E2)
 
-where, $`x`$ is the label images, $`\hat{x}`$ is the neural network predictions, $`g`$ is a Gaussian kernel and $`N`$ is the total number of images per batches. The operation $` x \otimes g`$ denotes a 2D Gaussian convolution between $`x`$ and $`g`$. 
+where, ![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20x) is the label images, ![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20%5Chat%7Bx%7D) is the neural network predictions, ![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20%7Bg%7D) is a Gaussian kernel and ![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20N) is the total number of images per batches. The operation ![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20x%20%5Cotimes%20g) denotes a 2D Gaussian convolution between ![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20x)and ![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20%7Bg%7D). 
 
 
 
@@ -102,8 +100,8 @@ The _train()_ function in `conv-autoencoder.py` takes the following arguments:
 - **lr** (float): learning rate for the Adam optimizer. [1e-4]
 - **batch_size** (int): batch size of training and validation dataset. [32]
 - **seed**: randomization seed number. [99]
-- **kernel_width** (int): size in pixel of the square Gaussian kernel ($`g`$). [5]
-- **kernel_fwhm** (int): Full width of half maximum of the Gaussian kernel ($`g`$).  [3]
+- **kernel_width** (int): size in pixel of the square Gaussian kernel (![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20%7Bg%7D)). [5]
+- **kernel_fwhm** (int): Full width of half maximum of the Gaussian kernel (![](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B150%7D%20%7Bg%7D)).  [3]
 - **verbose** (boolean): defines whether show up the visdom output results. [True]
 - **save** (boolean):  defines whether save or not the training model on the end (or KeyboardInterrupt) on training. [True]
 - **model_path** (path): path where to save the model. [None]
