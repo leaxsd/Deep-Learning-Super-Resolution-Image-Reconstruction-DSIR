@@ -172,9 +172,9 @@ The current performance might be improved by feeding the same auto-encoder with 
 
 ## References
 
-1. https://blog.keras.io/building-autoencoders-in-keras.html
-2. https://arxiv.org/abs/1801.09631v2
-3. http://bigwww.epfl.ch/smlm/challenge2013/index.html
+1. [https://blog.keras.io/building-autoencoders-in-keras.html](https://blog.keras.io/building-autoencoders-in-keras.html)
+2. [https://arxiv.org/abs/1801.09631v2](https://arxiv.org/abs/1801.09631v2)
+3. [http://bigwww.epfl.ch/smlm/challenge2013/index.html](http://bigwww.epfl.ch/smlm/challenge2013/index.html)
 
 
 
