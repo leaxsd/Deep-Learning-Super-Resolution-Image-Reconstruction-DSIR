@@ -4,7 +4,7 @@
 
 ___
 
-Super-resolution microscopy techniques (PALM, STORM…) can improve spatial resolution far beyond diffraction limit trough recording many frames of sparse single events emission (fluorescence labels). Low density (LD) data acquisition can provide tens of thousand of images of sparse events that can be readily localized using standard fitting algorithms (e.g, Thunder-STORM). However, the acquisition of such large number of images takes some time and can result to the sample drift and degrade the sample due to the intense light exposion. High density (HD) data of several hundred images can be faster in acquisition time but result of a very dense number of events per frames, which compromise the performance of the fitting localization algorithms. This repository proposes a method that use convolution neural network (ConvNet) auto-encoder [[1](#References)] to reconstruct a localization images from HD datasets. 
+Super-resolution microscopy techniques (PALM, STORM…) can improve spatial resolution far beyond diffraction limit trough recording many frames of sparse single events emission (fluorescence labels). Low density (LD) data acquisition can provide tens of thousand of images of sparse events that can be readily localized using standard fitting algorithms (e.g, Thunder-STORM). However, the acquisition of such large number of images takes some time and can result to the sample drift and degrade the sample due to the intense light exposion. High density (HD) data of several hundred images can be faster in acquisition time but result of a very dense number of events per frames, which compromise the performance of the fitting localization algorithms. This repository proposes a method that use convolution neural network (ConvNet) auto-encoder [[1](#references)] to reconstruct a localization images from HD datasets. 
 
 
 
@@ -14,7 +14,7 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve spatial reso
 
 
 
->  These work were probably developed in parallel with the work of Elias Nehme, et all. published in [[2](#References)]. Both achieved very similar results despite different coding languages. 
+>  These work were probably developed in parallel with the work of Elias Nehme, et all. published in [[2](#references)]. Both achieved very similar results despite different coding languages. 
 
 
 
@@ -140,7 +140,7 @@ We trained a model for 100 epochs using the [train dataset](#Training Dataset) a
 
 ### Test Dataset
 
-In order to test our trained model we used the  [Tubes HD dataset](http://bigwww.epfl.ch/smlm/challenge2013/datasets/Bundled_Tubes_High_Density/index.html) available from the 2013 IEEE International Symposium on Biomedical Imaging Challenge [[3](#References)]. ([Download Here](http://bigwww.epfl.ch/smlm/challenge2013/datasets/Bundled_Tubes_High_Density/sequence.zip))
+In order to test our trained model we used the  [Tubes HD dataset](http://bigwww.epfl.ch/smlm/challenge2013/datasets/Bundled_Tubes_High_Density/index.html) available from the 2013 IEEE International Symposium on Biomedical Imaging Challenge [[3](#references)]. ([Download Here](http://bigwww.epfl.ch/smlm/challenge2013/datasets/Bundled_Tubes_High_Density/sequence.zip))
 
 
 
