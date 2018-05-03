@@ -106,7 +106,7 @@ The _train()_ function in `conv-autoencoder.py` takes the following arguments:
 - **kernel_fwhm** (int): Full width of half maximum of the Gaussian kernel ($`g`$).  [3]
 - **verbose** (boolean): defines whether show up the visdom output results. [True]
 - **save** (boolean):  defines whether save or not the training model on the end (or KeyboardInterrupt) on training. [True]
-- **model_path** (path): path where to save the model. [None]
+- **model_path** (path): path where to save thhttps://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstructione model. [None]
 
 The preset parameters will save the model on path:
 
@@ -179,4 +179,6 @@ The current performance might be improved by feeding the same auto-encoder with 
 
 
 
-![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg) ![forthebadge](https://forthebadge.com/images/badges/built-with-science.svg)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org)  	
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-science.svg)](https://www.icfo.es)
