@@ -1,6 +1,6 @@
 # Deep-Learning Super-resolution Image Reconstruction (DSIR)
 
-####  | [Files](#files) | [Code](#code)| [Results](#results) | [Discussions](#discussions) | [References](#references) |						
+####  |   [Files](#files)  |  [Code](#code)  |  [Results](#results)  |  [Discussions](#discussions)  |  [References](#references)  |						
 
 ___
 
@@ -20,7 +20,7 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve spatial reso
 
 ConvNet auto-encoder proposed here were coded in [PyTorch](http://pytorch.org).  We define an auto-encoder architecture which consider and input array of size (208, 208, 1), original image size of **26x26 px** resized by a factor of 8. The ground-truth label is a pixel converted image (208, 208, 1) from the list emitters positions (x, y). Both transformations are defined in  `data_load.py` file. 
 
-<p align=center><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/visdom.png"></p>
+<p align="center"><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/visdom.png"></p>
 
 
 **Fig.2** - (Upper row) Training dataset ground-truth pixel localization image examples and (Lower row) correspondent trained auto-encoder predictions.
@@ -125,7 +125,7 @@ then you can open in your browser http://localhost:8097/# .
 
 For each training epoch you you'll have a set of 4 images with the prediction image reconstruction and the correspondent pixel ground-truth localization and the loss function value plot.
 
-<p align=center><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/visdom_window.png"></p>
+<p align="center"><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/visdom_window.png"></p>
 
 
 **Fig.3** - Ground-Truth pixel localization, auto-encoder prediction image reconstruction and training loss visdom output.
@@ -146,17 +146,17 @@ In order to test our trained model we used the  [Tubes HD dataset](http://bigwww
 
 ### localization Image Reconstruction 
 
-<p align=center><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/single_frame.png"></p>
+<p align="center"><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/single_frame.png"></p>
 
 
 **Fig.4** - Tubes HD dataset. (**Left**) single input frame image (**Right**) Zoom at red square and the ground-truth emitters positions(red crosses).
 
-<p align=center><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/single_frame_localization.png"></p>
+<p align="center"><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/single_frame_localization.png"></p>
 
 
 **Fig.5** - (**Left**) Single frame DSIR and (**Right**) comparison with ground-truth emitters positions (red crosses).
 
-<p align=center><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/localization.png"></p>
+<p align="center"><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/localization.png"></p>
 
 **Fig.6** -  (**Left**) Reconstruction of the 361 frame of the Tubes HD dataset. (**Right**) Zoom (green square Fig.4) image and ground-truth emitters position (red dots). The total reconstruction time for all frames is about **3 sec**. 
 
