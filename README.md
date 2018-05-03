@@ -1,6 +1,6 @@
 # Deep-Learning Super-resolution Image Reconstruction (DSIR)
 
-######  | :file_folder: [Files](#Files) | :computer: [Code](#Code)| :memo: [Results](#Results) |:speech_balloon: [Discussions](#Discussions) | :copyright: [References](#References) |						
+######  | :file_folder: [Files](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction#files) | :computer: [Code](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction#Code)| :memo: [Results](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction#Results) |:speech_balloon: [Discussions](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction#Discussions) | :copyright: [References](https://gitlab.icfo.net/leaxp/deep-learning-super-resolution-image-reconstruction#References) |						
 
 ___
 
