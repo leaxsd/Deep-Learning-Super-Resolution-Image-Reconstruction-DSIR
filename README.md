@@ -1,6 +1,6 @@
 # Deep-Learning Super-resolution Image Reconstruction (DSIR)
 
-####  | :file_folder: [Files](#files) | :computer: [Code](#code)| :memo: [Results](#results) |:speech_balloon: [Discussions](#discussions) | :copyright: [References](#references) |						
+####  | [Files](#files) | [Code](#code)| [Results](#results) | [Discussions](#discussions) | [References](#references) |						
 
 ___
 
@@ -8,7 +8,7 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve spatial reso
 
 
 
-<p align=center><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/autoencoder.png"></p>
+<img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/autoencoder.png" align="center">
 
 **Fig.1** - ConvNet auto-encoder representation for super-resolution image reconstruction.
 
