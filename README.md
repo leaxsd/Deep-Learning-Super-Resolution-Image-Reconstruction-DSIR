@@ -8,7 +8,7 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve spatial reso
 
 
 
-![convnet_autoencoder](../images/dsir/autoencoder.png)
+![convnet_autoencoder](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/tree/assets/autoencoder.png)
 
 **Fig.1** - ConvNet auto-encoder representation for super-resolution image reconstruction.
 
@@ -22,7 +22,7 @@ ConvNet auto-encoder proposed here were coded in [PyTorch](http://pytorch.org). 
 
 
 
-![](../images/dsir/visdom.png)
+![](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/tree/assets/visdom.png)
 
 **Fig.2** - (Upper row) Training dataset ground-truth pixel localization image examples and (Lower row) correspondent trained auto-encoder predictions.
 
@@ -49,10 +49,10 @@ A dataset of randomly generated single emission events were used to training our
 | PSF: Integrated Gaussian               | Base level: 100                    |
 | FWHM range: 200:300 nm                 |                                    |
 | Intensity range: 80:2050 photons       |                                    |
-| Density: 2.0 emitters/$\mu m^2$        |                                    |
+| Density: 2.0 emitters/$`\mu m^2`$        |                                    |
 | BG noise: 20                           |                                    |
 
-You can also download the used dataset [here](image/dataset.zip).  (**!!!Remember to adjust this link later!!!**). The raw dataset should be uncompressed  at `~/data/dataset/` folder.  
+You can also download the used dataset [here](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/tree/assets/dataset.zip).  The raw dataset should be uncompressed  at `~/data/dataset/` folder.  
 
 
 
@@ -85,11 +85,12 @@ def forward(self, x):
 ### Loss function
 
 Using an Adam optimizer, the loss function were defined as:
-$$
-loss(x, \hat{x}) = \frac{1}{N} \displaystyle \sum_{i=1}^N  |\hat{x_i} \otimes g - x_i \otimes g |^2 + 1e^{-5}*|\hat{x}i|^2
-$$
 
-where, $x$ is the label images, $\hat{x}$ is the neural network predictions, $g$ is a Gaussian kernel and $N$ is the total number of images per batches. The operation $ x \otimes g$ denotes a 2D Gaussian convolution between $x$ and $g$. 
+$`
+loss(x, \hat{x}) = \frac{1}{N} \displaystyle \sum_{i=1}^N  |\hat{x_i} \otimes g - x_i \otimes g |^2 + 1e^{-5}*|\hat{x}i|^2
+`$
+
+where, $`x`$ is the label images, $`\hat{x}`$ is the neural network predictions, $`g`$ is a Gaussian kernel and $`N`$ is the total number of images per batches. The operation $` x \otimes g`$ denotes a 2D Gaussian convolution between $`x`$ and $`g`$. 
 
 
 
@@ -101,8 +102,8 @@ The _train()_ function in `conv-autoencoder.py` takes the following arguments:
 - **lr** (float): learning rate for the Adam optimizer. [1e-4]
 - **batch_size** (int): batch size of training and validation dataset. [32]
 - **seed**: randomization seed number. [99]
-- **kernel_width** (int): size in pixel of the square Gaussian kernel ($g$). [5]
-- **kernel_fwhm** (int): Full width of half maximum of the Gaussian kernel ($g$).  [3]
+- **kernel_width** (int): size in pixel of the square Gaussian kernel ($`g`$). [5]
+- **kernel_fwhm** (int): Full width of half maximum of the Gaussian kernel ($`g`$).  [3]
 - **verbose** (boolean): defines whether show up the visdom output results. [True]
 - **save** (boolean):  defines whether save or not the training model on the end (or KeyboardInterrupt) on training. [True]
 - **model_path** (path): path where to save the model. [None]
@@ -127,7 +128,7 @@ then you can open in your browser http://localhost:8097/# .
 
 For each training epoch you you'll have a set of 4 images with the prediction image reconstruction and the correspondent pixel ground-truth localization and the loss function value plot.
 
-![visdom_output](../images/dsir/visdom_window.png)
+![visdom_output](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/tree/assets/visdom_window.png)
 
 **Fig.3** - Ground-Truth pixel localization, auto-encoder prediction image reconstruction and training loss visdom output.
 
@@ -147,15 +148,15 @@ In order to test our trained model we used the  [Tubes HD dataset](http://bigwww
 
 ### localization Image Reconstruction 
 
-![single frame](../images/dsir/single_frame.png)
+![single frame](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/tree/assets/single_frame.png)
 
 **Fig.4** - Tubes HD dataset. (**Left**) single input frame image (**Right**) Zoom at red square and the ground-truth emitters positions(red crosses).
 
-![single frame localization](../images/dsir/single_frame_localization.png)
+![single frame localization](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/tree/assets/single_frame_localization.png)
 
 **Fig.5** - (**Left**) Single frame DSIR and (**Right**) comparison with ground-truth emitters positions (red crosses).
 
-![single frame](../images/dsir/localization.png)
+![single frame](https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/tree/assets/localization.png)
 
 **Fig.6** -  (**Left**) Reconstruction of the 361 frame of the Tubes HD dataset. (**Right**) Zoom (green square Fig.4) image and ground-truth emitters position (red dots). The total reconstruction time for all frames is about **3 sec**. 
 
