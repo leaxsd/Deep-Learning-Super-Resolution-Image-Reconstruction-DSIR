@@ -1,6 +1,6 @@
 # Deep-Learning Super-resolution Image Reconstruction (DSIR)
 
-######  | :file_folder: [Files](#files) | :computer: [Code](#code)| :memo: [Results](#results) |:speech_balloon: [Discussions](#discussions) | :copyright: [References](#references) |						
+####  | :file_folder: [Files](#files) | :computer: [Code](#code)| :memo: [Results](#results) |:speech_balloon: [Discussions](#discussions) | :copyright: [References](#references) |						
 
 ___
 
