@@ -8,7 +8,7 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve spatial reso
 
 
 
-<p aligh=center><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/autoencoder.png"></p>
+<p align="center"><img src="https://github.com/leaxp/Deep-Learning-Super-Resolution-Image-Reconstruction-DSIR/raw/assets/autoencoder.png"></p>
 
 **Fig.1** - ConvNet auto-encoder representation for super-resolution image reconstruction.
 
