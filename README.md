@@ -85,11 +85,11 @@ def forward(self, x):
 ### Loss function
 
 Using an Adam optimizer, the loss function were defined as:
-$$
+$$`
 loss(x, \hat{x}) = \frac{1}{N} \displaystyle \sum_{i=1}^N  |\hat{x_i} \otimes g - x_i \otimes g |^2 + 1e^{-5}*|\hat{x}i|^2
-$$
+`$$
 
-where, $x$ is the label images, $\hat{x}$ is the neural network predictions, $g$ is a Gaussian kernel and $N$ is the total number of images per batches. The operation $ x \otimes g$ denotes a 2D Gaussian convolution between $x$ and $g$. 
+where, $`x`$ is the label images, $\hat{x}$ is the neural network predictions, $g$ is a Gaussian kernel and $N$ is the total number of images per batches. The operation $ x \otimes g$ denotes a 2D Gaussian convolution between $x$ and $g$. 
 
 
 
