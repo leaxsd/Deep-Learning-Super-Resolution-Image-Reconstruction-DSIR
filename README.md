@@ -14,7 +14,7 @@ Super-resolution microscopy techniques (PALM, STORM…) can improve spatial reso
 
 
 
->  These work were probably developed in parallel with the work of Elias Nehme, et all. published in [[2](#references)]. Both achieved very similar results despite different coding languages. 
+>  These work were probably developed in parallel with the work of Elias Nehme, et all. published in [[2](#references)]. Both achieved very similar rehttps://developer.nvidia.com/academic_gpu_seedingsults despite different coding languages. 
 
 
 
@@ -167,6 +167,8 @@ In order to test our trained model we used the  [Tubes HD dataset](http://bigwww
 Here we presented a ConvNet auto-encoder model applied to high density recorded stochastic super-resolution microscopy data. Although not discussed in here, this DSIR can improve performance compared with the state-of-the-art fitting algorithms that usually performed poorly with high density data. Also DSIR can be much faster the the most of fitting algorithms. 
 
 The current performance might be improved by feeding the same auto-encoder with different training dataset, E.g., experimental measured sparse data where the label positions are define via a standard fitting algorithm. Despite, DSIR be able to reconstruct localization super-resolution images, it lacks in terms of quantitative information since the ConvNet auto-encoder doesn't outputs the localization coordinates of each detected event. 
+
+Finally, this kind of approach has an import hole because employs machine learning as a scientific tool to retrieve unaccessible information rather than a simple analysis tool. 
 
 
 
